@@ -77,7 +77,12 @@ class EKBuilderTests: XCTestCase {
         }
         XCTAssertEqual(testByBuilder.value, testOneFalse.value)
     }
-    
+    func testNSObjectBuilder(){
+        let label:UILabel = .build {
+            $0.text = "test"
+        }
+        XCTAssertEqual(label.text, "test")
+    }
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

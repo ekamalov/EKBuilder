@@ -39,10 +39,13 @@ extension EKBuilder {
     ///        $0.count = 10
     ///     }
     /// - Returns: initialized Value
-    public static func build(_ block: (inout Self) -> Void) -> Self {
-        var a = Self.self.init()
-        block(&a)
-        return a
+    public static func build(_ block: (inout Self) throws -> Void) rethrows -> Self {
+        var copy = Self.self.init()
+        try block(&copy)
+        return copy
     }
     
 }
+
+
+extension NSObject: EKBuilder {}
