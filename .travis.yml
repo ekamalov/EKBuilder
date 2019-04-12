@@ -1,0 +1,17 @@
+language: objective-c
+osx_image: xcode10.2
+
+cache:
+- bundler
+- cocoapods
+
+install:
+- bundle install # --deployment # to cache vendor/bundle
+- pod install --repo-update;
+
+script:
+- sh build-ci.sh /tmp/EKBuilder
+
+after_success:
+- bash <(curl -s https://codecov.io/bash) -D /tmp/EKBuilder
+# bash <(curl -s https://codecov.io/bash) -J 'EKBuilder' -J 'EKBuilderTests'

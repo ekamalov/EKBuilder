@@ -12,6 +12,7 @@
 		45FF3D09225F68C6007C4F5F /* EKBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FF3CFB225F68C6007C4F5F /* EKBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45FF3D14225F68EE007C4F5F /* EKBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF3D13225F68EE007C4F5F /* EKBuilder.swift */; };
 		45FF3D16225F730E007C4F5F /* EKBuilder.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 45FF3D15225F730E007C4F5F /* EKBuilder.podspec */; };
+		45FF3D1822605F2B007C4F5F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 45FF3D1722605F2B007C4F5F /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		45FF3D08225F68C6007C4F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45FF3D13225F68EE007C4F5F /* EKBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKBuilder.swift; sourceTree = "<group>"; };
 		45FF3D15225F730E007C4F5F /* EKBuilder.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EKBuilder.podspec; sourceTree = "<group>"; };
+		45FF3D1722605F2B007C4F5F /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		45FF3CEE225F68C6007C4F5F = {
 			isa = PBXGroup;
 			children = (
+				45FF3D1722605F2B007C4F5F /* .travis.yml */,
 				45FF3D15225F730E007C4F5F /* EKBuilder.podspec */,
 				45FF3CFA225F68C6007C4F5F /* Source */,
 				45FF3D05225F68C6007C4F5F /* EKBuilderTests */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FF3D1822605F2B007C4F5F /* .travis.yml in Resources */,
 				45FF3D16225F730E007C4F5F /* EKBuilder.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
