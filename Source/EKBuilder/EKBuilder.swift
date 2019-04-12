@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol EKBuilder {
+public protocol EKBuilder {
     init()
 }
 extension EKBuilder {
