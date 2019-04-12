@@ -11,10 +11,10 @@ branches:
         - master
 
 install:
-- gem install xcpretty
+    - gem install xcpretty
 
 
 script:
     - set -o pipefail
-    - xcodebuild clean build test -project "$PROJECT" -scheme "$SCHEME" -destination "OS=12.0,name=iPhone X" -configuration Debug | xcpretty
+    - xcodebuild clean build test -project "$PROJECT" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' -configuration Debug | xcpretty
     - bash <(curl -s https://codecov.io/bash) -J 'EKBuilder'
