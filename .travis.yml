@@ -1,12 +1,5 @@
 language: objective-c
 osx_image: xcode10.2
-
-xcode_workspace: EKBuilder.xcworkspace
-xcode_scheme: EKBuilder
-xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
-
-after_success:
-- bash <(curl -s https://codecov.io/bash) -D /tmp/EKBuilder
-# bash <(curl -s https://codecov.io/bash) -J 'EKBuilder' -J 'EKBuilderTests'
-
-
+xcode_project: EKBuilder.xcodeproj # path to your xcodeproj folder
+xcode_scheme: EKBuilderTests
+xcode_destination: platform=iOS Simulator,OS=10.1,name=iPad Pro (9.7-inch)
