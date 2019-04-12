@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name          = "EKBuilder"
-    s.version       = "1.0.0"
+    s.version       = "1.0.1"
     s.summary       = "The super easy and generic builder pattern"
     s.homepage      = "https://github.com/erikkamalov/EKBuilder"
     s.source        = { :git => "https://github.com/erikkamalov/EKBuilder.git", :tag => s.version }
