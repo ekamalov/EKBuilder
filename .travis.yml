@@ -1,21 +1,12 @@
-osx_image: xcode10.2
 language: objective-c
-sudo: required
+osx_image: xcode10.2
+
 env:
 global:
-    - PROJECT="EKBuilder.xcodeproj"
-    - IOS_SDK="iphonesimulator12.2"
-    - FRAMEWORK="EKBuilder"
-matrix:
-    - SDK="$IOS_SDK"      DESTINATION="platform=iOS Simulator,name=iPhone X,OS=12.2"
+    - WORKSPACE=EKBuilder.xcodeproj
+    - SCHEME=EKBuilder
 
-
-install:
-    - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
-    - swift --version
-
-before_script:
+script:
     - set -o pipefail
-
-after_success:
+    - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' -configuration Debug | xcpretty
     - bash <(curl -s https://codecov.io/bash) -J 'EKBuilder'
