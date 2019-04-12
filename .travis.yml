@@ -4,7 +4,6 @@ sudo: required
 env:
 global:
     - PROJECT="EKBuilder.xcodeproj"
-    - SCHEME="EKBuilder-Package"
     - IOS_SDK="iphonesimulator12.2"
     - FRAMEWORK="EKBuilder"
 matrix:
