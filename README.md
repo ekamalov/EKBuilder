@@ -1,8 +1,9 @@
+![EKBuilder: builder pattern in Swift](https://github.com/erikkamalov/EKBuilder/blob/master/logo.jpg)
 # Builder
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/erikkamalov/EKBuilder/issues)
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
-[![Version](https://img.shields.io/github/release/ruddfawcett/Notepad.svg)](https://github.com/erikkamalov/EKBuilder/releases) 
+[![Version](https://img.shields.io/github/release/erikkamalov/EKBuilder.svg)](https://github.com/erikkamalov/EKBuilder/releases) 
 [![CocoaPods](http://img.shields.io/cocoapods/v/EKBuilder.svg)](https://cocoapods.org/pods/EKBuilder)
 [![Build Status](https://travis-ci.org/erikkamalov/EKBuilder.svg?branch=master)](https://travis-ci.org/erikkamalov/EKBuilder)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
