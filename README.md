@@ -1,5 +1,4 @@
-<img src="https://github.com/erikkamalov/EKBuilder/blob/master/Resource/logo.svg"/>
-
+![EKBuilder: builder pattern in Swift](https://raw.githubusercontent.com/erikkamalov/EKBuilder/master/Resource/logo.pdf)
 # Builder
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/erikkamalov/EKBuilder/issues)
