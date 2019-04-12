@@ -2,11 +2,15 @@ language: objective-c
 osx_image: xcode10.2
 
 env:
-global:
-    - WORKSPACE=EKBuilder.xcodeproj
-    - SCHEME=EKBuilder
+    global:
+        - PROJECT=EKBuilder.xcodeproj
+        - SCHEME=EKBuilder
+
+install:
+- gem install xcpretty
+
 
 script:
     - set -o pipefail
-    - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' -configuration Debug | xcpretty
+    - xcodebuild clean build test -project "$PROJECT" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' -configuration Debug | xcpretty
     - bash <(curl -s https://codecov.io/bash) -J 'EKBuilder'
